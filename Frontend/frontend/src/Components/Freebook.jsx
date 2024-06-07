@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
+import Card from "./Card";
 
 const Freebook = () => {
 const filterData = list.filter((data)=>data.category==="Free");
@@ -42,44 +43,24 @@ var settings = {
   };
 console.log(filterData);
   return (
-    <div>
     <>
+    
         <div className=" container mx-auto md:px-20 px-4">
-            <h1 className="font-semibold pb-2 text-xl">Free Offers Today!</h1>
-            <p>Now you can start your browsing and find knowledge with us Free books and materials in here. Get best from them.</p>
-        </div>
+            <h1 className="font-bold pb-2 text-2xl">Free Offers Today!</h1>
+            <p className="text-md">Now you can start your browsing and find knowledge with us Free books and materials in here. Get best from them.</p>
+        
 
-        <div>
-            <Slider {...settings}>
-            <div>
-            <h3>1</h3>
+            <div className="mb-10">
+                <Slider {...settings}>
+                    {filterData.map((item)=>(
+                        <Card item={item} key={item.id} />
+                    ))}
+                </Slider>
             </div>
-            <div>
-            <h3>2</h3>
-            </div>
-            <div>
-            <h3>3</h3>
-            </div>
-            <div>
-            <h3>4</h3>
-            </div>
-            <div>
-            <h3>5</h3>
-            </div>
-            <div>
-            <h3>6</h3>
-            </div>
-            <div>
-            <h3>7</h3>
-            </div>
-            <div>
-            <h3>8</h3>
-            </div>
-        </Slider>
-        </div>
-    </>
+   
       
-    </div>
+        </div>
+     </>   
   )
 }
 
