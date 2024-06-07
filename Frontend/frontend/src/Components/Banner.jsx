@@ -3,7 +3,7 @@ import banner from '../../public/banner.jpg';
 const Banner = () => {
   return (
     <>
-    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row">
+    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
         <div className="w-full md:w-1/2 mt-12 md:mt-32 md:order-1 order-2">
             <div className="space-y-12">
                 <h1 className="text-4xl font-bold">
@@ -12,6 +12,8 @@ const Banner = () => {
 
                 <p className="text-[18px] ">
                     Explore and Get unbelivable experience and new knowledge with our book stock e-book platform. You can share and get great oppertunity with us. We are always for you and your needs...
+                    
+
                 </p>
 
                 <label className="input input-bordered flex items-center gap-2">
