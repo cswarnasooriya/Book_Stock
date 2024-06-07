@@ -1,7 +1,6 @@
-import Banner from "./Components/Banner"
-import Footer from "./Components/Footer"
-import Freebook from "./Components/Freebook"
-import Navbar from "./Components/Navbar"
+import Collection from "./Components/Collection"
+import Home from "./Home/Home"
+
 
 
 
@@ -10,10 +9,8 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      <Banner/>
-      <Freebook/>
-      <Footer/>
+     <Home/>
+     <Collection/>
     </>
   )
 }
