@@ -23,10 +23,10 @@ const Navbar = () => {
         <>
 
             <li>
-                <a>Home</a>
+                <a href="/">Home</a>
             </li>
             <li>
-                 <a>Course</a>
+                 <a href="/collection">Collection</a>
             </li>
             <li>
                  <a>Contact</a>
