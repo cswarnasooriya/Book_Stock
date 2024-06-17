@@ -4,7 +4,7 @@ const Card = ({ item }) => {
   return (
     <>
     <div className="mt-5 p-2">
-        <div className="card w-92 cursor-pointer bg-base-100 shadow-xl hover:scale-[1.02]">
+        <div className="card w-92 cursor-pointer bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
     <figure>
         <img src={item.img} 
             alt="Shoes" />

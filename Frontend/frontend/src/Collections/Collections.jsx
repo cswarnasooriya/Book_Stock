@@ -1,9 +1,10 @@
-import list from "../../public/list.json";
+
 import Navbar from '../Components/Navbar'
 import Collection from '../Components/Collection'
 import Footer from '../Components/Footer'
 
 const Collections = () => {
+
   return (
     <>
         <Navbar/>
