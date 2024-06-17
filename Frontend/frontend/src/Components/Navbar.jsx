@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Login from "./Login";
 
 
 const Navbar = () => {
@@ -112,7 +113,11 @@ const Navbar = () => {
             </label>
 
             <div className="">
-                <a className="btn bg-black text-white px-8 rounded-md hover:bg-slate-800 cursor-pointer duration-300">Login</a>
+                <a className="btn bg-black text-white px-8 rounded-md hover:bg-slate-800 cursor-pointer duration-300" onClick={()=>document.getElementById('my_modal_3').showModal()}>
+                 Login
+                </a>
+                <Login/>
+
             </div>
 
         </div>
