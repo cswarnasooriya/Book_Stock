@@ -12,7 +12,7 @@ const Collections = () => {
             <Collection/>
         </div>
         <Footer/>
-      
+       
     </>
   )
 }
