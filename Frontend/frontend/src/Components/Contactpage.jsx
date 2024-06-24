@@ -36,7 +36,7 @@ const Contactpage = () => {
                             <div className="w-12">
                             <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                             </div>
-                        </div>
+                         </div>
                         <div className="avatar">
                             <div className="w-12">
                             <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
@@ -51,7 +51,7 @@ const Contactpage = () => {
                     </div>
                     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form className="card-body">
-                    <h1 className="text-xl font-semibold text-blue-700 items-center justify-center text-center">You can get Rewards here!</h1>
+                    <h1 className="text-xl font-semibold text-pink-500 items-center justify-center text-center">You can get Rewards here!</h1>
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text">Name</span>
@@ -68,7 +68,7 @@ const Contactpage = () => {
                         </label>
                         </div>
                         <div className="form-control mt-6">
-                        <button className="btn btn-primary">Get Reward</button>
+                        <button className="btn btn-primary bg-pink-500 text-gray-800">Get Reward</button>
                         </div>
                     </form>
                     </div>
