@@ -1,8 +1,10 @@
 import {Link} from 'react-router-dom'
-import list from '../../public/list.json';
 import Card from './Card';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+
+
+
 const Collection = () => {
 
   const [book,setBook] = useState([]);
