@@ -21,16 +21,26 @@ const Login = () => {
         .then((res)=>{
             console.log(res.data)
             if(res.data){
-                toast.success("Login Successfully!")
+                toast.success("Login Successfully!");
+                document.getElementById("my_model_3").close();
+
+                setTimeout(()=>{
+                    
+                    window.location.reload();
+                    localStorage.setItem("Users", JSON.stringify(res.data.user)); 
+
+                }, 1000);
+               
+
             }
-            localStorage.setItem("Users", JSON.stringify(res.data.user)); 
 
-            //show details in localstorage
-
+           
         }).catch((err)=>{
             if(err.response){
                 console.log(err);
                 toast.error("Error: " + err.response.data.message);
+
+                setTimeout(() =>{}, 2000);
             }
         })
     }
